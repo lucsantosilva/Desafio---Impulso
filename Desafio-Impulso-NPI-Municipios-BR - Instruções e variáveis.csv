@@ -1,0 +1,58 @@
+,,,
+INSTRUÇÕES - COMECE AQUI!,,,
+,"
+A tabela contém dados preliminares sobre políticas adotados por municípios para frear a transmissão da Covid-19 nas nossas cidades. 
+Essas medidas, como fechamento de escolas, são chamadas de ""NPIs"", (Non-Pharmaceutical Interventions"") e estão no centro do debate da resposta à pandemia no mundo.
+
+Com a crescente pressão para a retomada da circulação de pessoas, queremos ajudar municípios a entender qual será a pressão sobre seu sistema de saúde a cada medida relaxada. Listamos na aba ""Tracker-Municipal"" as políticas de cidades brasileiras com ao menos 1 morte registrada de Covid-19 em abril de 2020. Dados auxiliares de casos e mortes acumulados em 17/abr estão na aba ""dados-cidades"".
+
+Nosso foco são políticas editadas por governos estaduais e municipais, porém se houver uma decisão de órgão colegiado coordenando uma ação - como, por exemplo, reitores de universidades que decidem juntos fechar seus campi, a data dessa decisão também pode estar registrada. Ela é diferente, porém, de ações individuais, como a iniciativa de um salão de fechar as portas.
+
+Sobre o preechimento dos dados
+
+- Para cada cidade, são preenchidas 3 tipos de linha:
+   - data de início (MM/DD/AAAA)
+   - data de fim (se for prevista no decreto ou se tiver decreto equivalente) (MM/DD/AAAA)
+   - fonte (pode ser mais de um, separado por "";"")
+
+- Se a cidade ou estado não tiver aquela política específica, a célula estará preenchida com ""NA"" ou ""N/A"".
+
+- Se alguma medida estiver editada com prazo para acabar, porém esse vem sendo recorrentemente extendido, isso estará registrado nas ""observações"".
+
+Considerações
+Essa coleta só foi possível com o esforço de mais de 40 voluntári@s de diferentes cantos do país. Essa base é uma versão preliminar. Ela ainda não foi revista e não está pronta para uso em trabalhos científicos, nem deve ser utilizada ou replicada para além deste exercício.
+A ImpulsoGov agradece ao trabalho de tod@s e pedimos que utilize os dados com bom senso.",,
+,,,
+,Dicionário de dados,,
+,Coluna,Descrição,OBS
+,UF,Código do estado,
+,MUN,Nome do município,
+,COD_IBGE,Código do município,
+,num_mortes_prioridade,Número de mortes já registrado até a data de atualização.,
+,tipo,Referência dos dados contidos na linha: data de inicio / data de fim / fonte,
+,data_da_atualizacao,Data da última revisão dos dados,
+,escolas_municipais_fechadas,Data a partir da qual escolas municipais foram fechadas,
+,escolas_estaduais_fechadas,Data a partir da qual escolas estaduais foram fechadas,
+,universidades_fechadas,Data a partir da qual universidades na cidade foram fechadas (se houver),"- Preenchido se há o decreto estadual ou nota do conselho de reitores sinalizando o fechamento das universidades do estado 
+- Caso as universidades tenham feito isso de maneira individual, indicar como ""NA"""
+,comercio_nao_essencial_fechado,"Data a partir da qual comércio não-essencial foi fechado (ex: cinemas, restaurantes (só delivery); bares, cabelereiro)",
+,espacos_publicos_fechados,Data a partir da qual espaços como praças e parques foram fechadas,
+,transporte_publico_reduzido,Data a partir da qual transportes como ônibus ou metrôs sofreram alteração de linhas ou frequência,
+,igrejas_fechadas,Data a partir da qual igrejas fecharam,
+,eventos_de_grande_porte_cancelados,"Data a partir da qual eventos, como shows, foram cancelados ",
+,transporte_rodoviário_intermunicipal_cancelado,Data a partir da qual transporte entre municípios foi suspenso,
+,entrada_restrita_a_residentes,Data a partir da qual a entrada de não-residentes do município ficou restrita (controle de fronteira),
+,doentes_orientados_a_ficar_em_casa,Data a partir da qual pessoas com sintomas de Covid foram orientadas a ficar em casa ,
+,distribuicao_merenda_escolar,Data de anúncio da distribuiçcão de merenda por parte de entidade pública,"Conta como distribuição de merenda toda ação voltada à alimentação de alunos da rede escolar pública. Em algumas cidades, foi feita distribuição de cesta básica para alunos, por exemplo, em outras a distribuição de cartões pré-pagos estilo ""vale alimentação"""
+,restricao_horario_comercio,Data a partir da qual foi estabelecida restrição de horário de funcionamento para estabelecimentos comerciais essenciais (ex: supermercado),
+,toque_de_recolher,Data a partir da qual foi estabelecido toque de recolher,
+,circulacao_apenas_com_autorizacao,Data a partir da qual foi estabelecido que a circulação de pessoas na rua seria permitida somente com autorização,
+,antecipacao_vacinacao,Data de anúncio de antecipação de campanha de vacinação para gripe,
+,desinfeccao_cidade,Data de anúncio de ações de limpeza ou desinfecção voltadas para coronavírus,
+,distribuicao_cesta_basica,Data de anúncio de ações de distribuição por parte de secretarias de desenvolvimento social ou parelhas de distribuição de cesta básica,
+,campanhas_publicas_para_ficar_em_casa,Data a partir da qual começaram campanhas públicas para incentivar pessoas a ficar em casa,
+,obrigatoriedade_uso_mascaras_espacos_publicos,Data a partir da qual passou a ser obrigatório o uso de máscaras pela população em espaços públicos,
+,limite_pessoas_por_aglomeracao,Data de decreto/comunicado estipulando limite máximo de pessoas (ex: grupos de 5 ou mais estão proibidos),
+,aplicacao_de_multa,Data de decreto/comunicado estipulando multa por violação de alguma das medidas acima,
+,Início da testagem,Data de início da testagem em massa,
+,observação,"Preencha com observações, indicando a qual variável se referem",
